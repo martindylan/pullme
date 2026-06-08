@@ -1,0 +1,13 @@
+#N canvas 4 44 1366 685 12;
+#X msg 22 138 set \$1;
+#X obj 12 51 r param;
+#X obj 22 162 s \$2-r;
+#X obj 12 80 route \$1;
+#X obj 12 191 s \$2;
+#X obj 12 109 change -1e+37;
+#X obj 12 12 ./param.set \$1 \$2;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 3 0 5 0;
+#X connect 5 0 0 0;
+#X connect 5 0 4 0;

@@ -1,0 +1,3 @@
+pullme~ es un resintetizador espectral que permite varios tipos de manipulación estéreo sobre el espectro resintetizado
+
+autor: dylan martin
