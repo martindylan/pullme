@@ -91,11 +91,14 @@ param -name A -list off/on;
 param -name A# -list off/on;
 param -name B -list off/on;
 param -name gain -label dB -min -100 -max 12;
+param -name link trigger -list off/on;
+param -name autotune in -list off/on;
 
 type effect;
 code dMag;
 compatibility 1.0.7;
 playhead true;
 bus 2 2;
+midiin true;
 description info.txt;
 manufacturer Dylan Martin;

@@ -506,7 +506,7 @@
 #X connect 46 0 32 0;
 #X restore 123 428 pd fm-link;
 #X obj 105 457 +~;
-#N canvas 74 185 450 300 autotune 0;
+#N canvas 454 186 450 300 autotune 0;
 #X obj 12 123 spigot;
 #X obj 68 123 spigot;
 #X obj 107 94 == 0;
@@ -515,7 +515,6 @@
 #X obj 68 94 f;
 #X obj 12 181 outlet;
 #X obj 12 12 inlet;
-#X obj 51 41 r \$1-autotune;
 #N canvas 4 44 1366 685 fixfreq 0;
 #X msg 145 828 17.324;
 #X msg 128 799 16.352;
@@ -786,7 +785,8 @@
 #X connect 114 0 37 1;
 #X connect 114 1 39 0;
 #X restore 12 152 pd fixfreq;
-#X connect 0 0 9 0;
+#X obj 51 41 r \$1-autotune-new;
+#X connect 0 0 8 0;
 #X connect 1 0 6 0;
 #X connect 2 0 1 1;
 #X connect 3 0 5 0;
@@ -797,8 +797,8 @@
 #X connect 5 0 1 0;
 #X connect 7 0 4 0;
 #X connect 7 0 5 0;
-#X connect 8 0 3 0;
-#X connect 9 0 6 0;
+#X connect 8 0 6 0;
+#X connect 9 0 3 0;
 #X restore 163 100 pd autotune;
 #X obj 12 13 r \$1-pull-\$3;
 #X obj 44 71 s \$0-pull-first;
